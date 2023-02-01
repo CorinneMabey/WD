@@ -1,0 +1,18 @@
+/* CSS practice */
+
+body{
+    margin: 0
+}
+    #top {
+        border-radius: 0%;
+    }
+    .small_pic {
+        /* max-width: 10%; */
+        width: 80px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+
+
+
