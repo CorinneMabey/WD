@@ -262,6 +262,23 @@ h4{
     padding-top: 10px;
 }
 
+#Rates-Text {
+    margin: 50px;
+}
+
+/* #boater-area {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+} */
+
+#boater-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
