@@ -1,180 +1,136 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-@import url('https://fonts.cdnfonts.com/css/gistesy');
-
-:root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #090C08   ;
-  --secondary-color: #2A0C4E ;
-  --accent1-color: #F64740;
-  --accent2-color: #51355A;
-
-  /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
-
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #090C08;  /* headlines on a white background */ 
-  --headline-color-on-color: #FFF8F0; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #090C08; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #FFF8F0; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #2A0C4E  ;
-  --nav-link-color: #F64740;
-  --nav-background-color: #FFF8F0;
-  --nav-hover-link-color: #FFF8F0;
-  --nav-hover-background-color: #F64740;
-}
-
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
+    margin: 0 7%;
+    font-size: 18px;
 }
+
 img {
-  display: block;
-  margin: 0 auto;
-  max-height: 100px;
+    display: grid;
+    max-width: 75%;
+    margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+
+#tagline-img {
+    max-width: 75%;
+    margin: 0 auto;
+    grid-column: 1/12;
+    grid-row: 3/4;
 }
 
 p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
-}
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-.colors th {
-  background-color: #999;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
+    font-family: Lato, Helvetica, sans-serif;
+    color: #090C08;
+    padding: .5em;
+    grid-column: 1/12;
 }
 
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
+header img {
+    display: center;
+    max-width: 65%;
+    grid-column: 1/11;
+    grid-row: 1;
 }
 
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
+#title {
+    text-align: center;
+}
+
+#tagline {
+    background-color: #FFF8F0;
+    padding: 2%;
+    grid-column: 1/4;
+    grid-row: 3/5;
 }
 
 nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
-  display: flex;
+    background-color: #FFF8F0;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    grid-column: 1/12;
+    grid-row: 2/3;
+  }
 
-}
 nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
-
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
 }
+
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
+    color: #f24f49;
+}  
+
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+    color: #FFF8F0;
+    background-color: #F64740;
+  }
+
+.event-card {
+    margin: 200px 0;
+    grid-column: inherit;
+    grid-row: inherit;
 }
 
-.sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-.sitemap > div {
-
-  text-align: center;
-
-}
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
+.chat
+.event
+#chat-header
+#event-header {
+    text-align: center;
 }
 
-.top {
-  grid-area: top;
-  border-left: 1px solid;
+.chat-card {
+    margin: 200px 0;
+    grid-column: inherit;
+    grid-row: inherit;
 }
 
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
+/* footer {
+    background-color: #FFF8F0;
+
+} */
+.home-grid {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 120px 1fr;
+}
+footer img {
+    max-width: 100px;
+    padding-left: 50px;
+    display: inline;
+    columns: 2/3;
 }
 
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
+footer a:hover {
+    color: black;
+    text-decoration: none;
 }
 
-.wireframes {
-  width: 600px;
+footer p {
+    font-size: 1.2em;
+    columns: 3/6;
+}
+
+@media screen and (max-width: 500px) {
+    nav, footer {
+        flex-direction: column;
+        line-height: 2em;
+    }
+    nav a {
+        display: block;
+        padding: 0px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .chat-card .event-card {
+        margin: 50px auto;
+        width: 60%;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
